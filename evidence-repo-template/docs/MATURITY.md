@@ -1,50 +1,50 @@
-# Maturity and applicability model
+# Modelo de maturidade e aplicabilidade
 
-## Normative basis
+## Base normativa
 
-The repository uses **OpenSSF OSPS Baseline v2026.08.28** as the normative maturity reference for this starter harness.
+O repositório usa o **OpenSSF OSPS Baseline v2026.08.28** como referência normativa de maturidade para este harness inicial.
 
-OSPS defines:
+O OSPS define:
 
-- Level 1: any code or non-code project with any number of maintainers/users.
-- Level 2: code project with at least two maintainers and a small number of consistent users.
-- Level 3: code project with a large number of consistent users.
+- Level 1: qualquer projeto de código ou não código com qualquer número de mantenedores/usuários.
+- Level 2: projeto de código com pelo menos dois mantenedores e um pequeno número de usuários consistentes.
+- Level 3: projeto de código com um grande número de usuários consistentes.
 
-The harness does not invent a numeric threshold for “large number of users”. Promotion therefore requires explicit human evidence in `policy/project-state.json`.
+O harness não inventa um limite numérico para “grande número de usuários”. Portanto, a promoção exige evidência humana explícita em `policy/project-state.json`.
 
-## Product stage is non-normative
+## Estágio do produto não é normativo
 
-`exploration`, `prototype`, `MVP`, `mature-MVP`, and `production` may be useful product labels, but they are not OSPS maturity levels. They never satisfy an OSPS control by themselves.
+`exploration`, `prototype`, `MVP`, `mature-MVP` e `production` podem ser rótulos úteis do produto, mas não são níveis de maturidade OSPS. Eles nunca satisfazem um controle OSPS por si mesmos.
 
-## Observable triggers
+## Gatilhos observáveis
 
-The harness recognizes these observable triggers:
+O harness reconhece estes gatilhos observáveis:
 
-1. **First release observed** — `release.made=true` in the state file or at least one Git tag is present.
-2. **Maintainer count changed** — used to request reassessment, not automatic promotion.
-3. **OSPS target level changed** — activates the corresponding locally checkable controls.
-4. **Project implementation present** — project-specific testing should no longer remain empty.
+1. **Primeiro release observado** — `release.made=true` no arquivo de estado ou pelo menos uma tag Git presente.
+2. **Contagem de mantenedores alterada** — usada para solicitar reavaliação, não para promoção automática.
+3. **Nível-alvo OSPS alterado** — ativa os controles correspondentes verificáveis localmente.
+4. **Implementação do projeto presente** — os testes específicos do projeto não devem mais permanecer vazios.
 
-## State transition rule
+## Regra de transição de estado
 
-A transition never means “all requirements pass.” It means **new requirements may become applicable**.
+Uma transição nunca significa “todos os requisitos passam”. Significa que **novos requisitos podem se tornar aplicáveis**.
 
-Example:
+Exemplo:
 
 ```text
-first release observed
+primeiro release observado
         ↓
-release-conditioned controls become applicable
+controles condicionados ao release tornam-se aplicáveis
         ↓
-harness checks available local evidence
+harness verifica as evidências locais disponíveis
         ↓
 PASS / GAP / UNKNOWN_EXTERNAL
 ```
 
-## External checks
+## Verificações externas
 
-Some requirements cannot be proved from files alone, including MFA, repository-rule enforcement, branch deletion protection, collaborator permissions, and some hosted CI/security settings. The harness must report these as `UNKNOWN_EXTERNAL` unless queried through an authoritative platform API.
+Alguns requisitos não podem ser comprovados apenas pelos arquivos, incluindo MFA, aplicação das regras do repositório, proteção contra exclusão de branches, permissões de colaboradores e algumas configurações hospedadas de CI/segurança. O harness deve reportá-los como `UNKNOWN_EXTERNAL`, a menos que sejam consultados por uma API de plataforma autoritativa.
 
-## Reassessment rule
+## Regra de reavaliação
 
-When project facts no longer fit the recorded target maturity, report `MATURITY_REASSESSMENT_REQUIRED`. Never silently promote or demote maturity.
+Quando os fatos do projeto não se ajustarem mais à maturidade-alvo registrada, reporte `MATURITY_REASSESSMENT_REQUIRED`. Nunca promova ou rebaixe a maturidade silenciosamente.
