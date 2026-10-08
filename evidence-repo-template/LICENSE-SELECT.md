@@ -1,11 +1,11 @@
-# License selection gate
+# Gate de seleção de licença
 
-The template intentionally does not choose a license on behalf of a new project.
+O template intencionalmente não escolhe uma licença em nome de um novo projeto.
 
-Before treating OSPS Level 1 legal/licensing controls as satisfied:
+Antes de considerar satisfeitos os controles legais/de licenciamento do OSPS Level 1:
 
-1. select the appropriate license for the project;
-2. place the actual license text in `LICENSE`, `COPYING`, `LICENSE/`, or `LICENSES/` as applicable;
-3. remove this reminder only after the real license is committed.
+1. selecione a licença apropriada para o projeto;
+2. coloque o texto real da licença em `LICENSE`, `COPYING`, `LICENSE/` ou `LICENSES/`, conforme aplicável;
+3. remova este lembrete somente depois que a licença real for commitada.
 
-The local harness reports a gap while no recognized license location exists.
+O harness local relata uma lacuna enquanto não existir uma localização de licença reconhecida.
