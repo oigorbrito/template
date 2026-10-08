@@ -1,19 +1,19 @@
-# Testing
+# Testes
 
-## Canonical local verification
+## Verificação local canônica
 
 ```bash
 python scripts/harness.py
 python -m unittest discover -s tests -v
 ```
 
-## Current test scope
+## Escopo atual dos testes
 
-The template tests only the harness itself. Project-specific tests must be added as implementation appears.
+O template testa apenas o próprio harness. Testes específicos do projeto devem ser adicionados à medida que a implementação surgir.
 
-## Maturity trigger
+## Gatilho de maturidade
 
-- OSPS Level 2: automated tests must be run by CI before a change is accepted where the applicable control requires it.
-- OSPS Level 3: documentation must explain when/how tests run, and major changes should add or update tests according to documented policy.
+- OSPS Level 2: testes automatizados devem ser executados pelo CI antes que uma alteração seja aceita quando o controle aplicável assim exigir.
+- OSPS Level 3: a documentação deve explicar quando/como os testes são executados, e alterações importantes devem adicionar ou atualizar testes de acordo com a política documentada.
 
-The harness does not claim that a repository is Level 2/3 merely because this file exists.
+O harness não afirma que um repositório está no Level 2/3 apenas porque este arquivo existe.

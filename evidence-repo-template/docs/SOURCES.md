@@ -1,27 +1,27 @@
-# External basis
+# Base externa
 
-This template intentionally separates **source requirements** from **repository adapters**.
+Este template separa intencionalmente **requisitos de origem** de **adaptadores do repositório**.
 
 ## OpenSSF OSPS Baseline
 
-- Current baseline used by this template: v2026.08.28
+- Baseline atual usado por este template: v2026.08.28
 - https://baseline.openssf.org/versions/2026-08-28
 - https://baseline.openssf.org/
 
-Used for: maturity levels; contribution guidance; license location; dependency transparency; automated testing; release-conditioned documentation; SBOM/SCA/SAST controls; and distinction between levels.
+Usado para: níveis de maturidade; orientação de contribuição; localização da licença; transparência de dependências; testes automatizados; documentação condicionada ao release; controles de SBOM/SCA/SAST; e distinção entre níveis.
 
 ## OpenSSF Scorecard
 
 - https://github.com/ossf/scorecard
 - https://github.com/ossf/scorecard-action
 
-Used for: recurring automated repository security-health assessment. The provided workflow is an example and must be pinned/configured before enabling.
+Usado para: avaliação automatizada recorrente da saúde de segurança do repositório. O workflow fornecido é um exemplo e deve ser fixado/configurado antes de ser habilitado.
 
 ## NIST SSDF
 
 - https://csrc.nist.gov/projects/ssdf
 
-Used for: secure software-development practices organized around preparation, protection, producing well-secured software, and vulnerability response. This template does not claim NIST conformance.
+Usado para: práticas de desenvolvimento seguro de software organizadas em torno de preparação, proteção, produção de software bem protegido e resposta a vulnerabilidades. Este template não afirma conformidade com o NIST.
 
 ## DORA
 
@@ -29,24 +29,24 @@ Used for: secure software-development practices organized around preparation, pr
 - https://dora.dev/capabilities/continuous-integration/
 - https://dora.dev/capabilities/continuous-delivery/
 
-Used for: empirical support for comprehensive version control, automated build/test feedback, CI, continuous testing, and versioning of automation/configuration/AI artifacts.
+Usado para: suporte empírico a controle de versão abrangente, feedback automatizado de build/teste, CI, testes contínuos e versionamento de artefatos de automação/configuração/IA.
 
 ## GitHub
 
 - https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository
 - https://docs.github.com/en/copilot/reference/custom-instructions-support
 
-Used for: template-repository mechanics and recognized locations for Copilot/agent instructions.
+Usado para: mecanismos de repositórios-template e localizações reconhecidas para instruções do Copilot/agentes.
 
-## Repository-specific adapters (not external requirements)
+## Adaptadores específicos do repositório (não são requisitos externos)
 
-The following are implementation choices made solely to operationalize the external material:
+Os seguintes são escolhas de implementação feitas exclusivamente para operacionalizar o material externo:
 
 - `policy/project-state.json`
 - `scripts/harness.py`
-- result labels `PASS`, `GAP`, `UNKNOWN_EXTERNAL`, `NOT_APPLICABLE`
+- rótulos de resultado `PASS`, `GAP`, `UNKNOWN_EXTERNAL`, `NOT_APPLICABLE`
 - `MATURITY_REASSESSMENT_REQUIRED`
-- use of `AGENTS.md` to tell agents to run the harness
-- the `evidence-reviewer` custom-agent profile
+- uso de `AGENTS.md` para instruir agentes a executar o harness
+- o perfil de agente personalizado `evidence-reviewer`
 
-These adapters must not be cited as if OpenSSF, NIST, DORA, or GitHub mandated their exact names or formats.
+Esses adaptadores não devem ser citados como se OpenSSF, NIST, DORA ou GitHub determinassem seus nomes ou formatos exatos.

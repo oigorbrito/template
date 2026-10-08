@@ -1,50 +1,50 @@
-# Evidence-Driven Repository Template
+# Template de Repositório Orientado por Evidências
 
-This repository is a **starter harness**, not a claim of maturity or compliance.
+Este repositório é um **harness inicial**, não uma afirmação de maturidade ou conformidade.
 
-Its purpose is to make a new repository start with:
+Seu objetivo é fazer com que um novo repositório comece com:
 
-- versioned project instructions and engineering evidence;
-- a minimal executable verification command;
-- machine-readable project state;
-- explicit maturity/release triggers;
-- fail-closed reporting (`PASS`, `GAP`, `UNKNOWN_EXTERNAL`, `NOT_APPLICABLE`);
-- a path to stronger controls as externally defined requirements become applicable.
+- instruções de projeto versionadas e evidências de engenharia;
+- um comando mínimo de verificação executável;
+- estado do projeto legível por máquina;
+- gatilhos explícitos de maturidade/release;
+- relatórios com falha fechada (`PASS`, `GAP`, `UNKNOWN_EXTERNAL`, `NOT_APPLICABLE`);
+- um caminho para controles mais fortes à medida que requisitos definidos externamente se tornem aplicáveis.
 
-## Canonical verification
+## Verificação canônica
 
 ```bash
 python scripts/harness.py
 python -m unittest discover -s tests -v
 ```
 
-## First-use checklist
+## Checklist de primeiro uso
 
-1. Replace the project name and purpose below.
-2. Select a real license and save it as `LICENSE` (see `LICENSE-SELECT.md`).
-3. Update `policy/project-state.json` with observable facts only.
-4. Implement the project under `src/` and tests under `tests/`.
-5. Configure GitHub Repository Rules / branch protection outside the repository.
-6. Enable OpenSSF Scorecard using `.github/workflows/scorecard.yml.example` after pinning every action to an exact commit SHA.
+1. Substitua o nome e a finalidade do projeto abaixo.
+2. Selecione uma licença real e salve-a como `LICENSE` (consulte `LICENSE-SELECT.md`).
+3. Atualize `policy/project-state.json` somente com fatos observáveis.
+4. Implemente o projeto em `src/` e os testes em `tests/`.
+5. Configure as Regras do Repositório do GitHub / proteção de branch fora do repositório.
+6. Habilite o OpenSSF Scorecard usando `.github/workflows/scorecard.yml.example` depois de fixar cada action em um SHA de commit exato.
 
-## Project purpose
+## Finalidade do projeto
 
 **STATUS: UNDEFINED**
 
-Describe the project here before implementation is considered established.
+Descreva o projeto aqui antes que a implementação seja considerada estabelecida.
 
-## Basic usage
+## Uso básico
 
 **STATUS: NOT_RELEASED**
 
-Before the first official release, replace this section with installation, configuration and basic-usage instructions.
+Antes do primeiro release oficial, substitua esta seção por instruções de instalação, configuração e uso básico.
 
-## Defect reporting
+## Relato de defeitos
 
-Use GitHub Issues for non-sensitive defects. Security vulnerabilities must follow `SECURITY.md`.
+Use GitHub Issues para defeitos não sensíveis. Vulnerabilidades de segurança devem seguir `SECURITY.md`.
 
-## Maturity semantics
+## Semântica de maturidade
 
-`product_stage` in `policy/project-state.json` is informational only. Terms such as `MVP` are **not** treated as proof of an OpenSSF maturity level.
+`product_stage` em `policy/project-state.json` é apenas informativo. Termos como `MVP` **não** são tratados como prova de um nível de maturidade OpenSSF.
 
-The normative security maturity target is `osps_target_level`, and every promotion must be supported by observable evidence. See `docs/MATURITY.md`.
+O alvo normativo de maturidade de segurança é `osps_target_level`, e toda promoção deve ser sustentada por evidências observáveis. Consulte `docs/MATURITY.md`.
