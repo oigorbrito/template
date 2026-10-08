@@ -1,38 +1,38 @@
-# Architecture
+# Arquitetura
 
 **STATUS: PROVISIONAL**
 
-This file starts intentionally small. It must describe observed architecture, not anticipated architecture.
+Este arquivo começa intencionalmente pequeno. Ele deve descrever a arquitetura observada, não a arquitetura prevista.
 
-## Purpose
-
-TBD.
-
-## System boundary
+## Finalidade
 
 TBD.
 
-## Components
+## Limite do sistema
 
-None established yet.
+TBD.
 
-## External interfaces
+## Componentes
 
-None established yet.
+Nenhum estabelecido ainda.
 
-## Data flow
+## Interfaces externas
 
-Not established yet.
+Nenhuma estabelecida ainda.
 
-## Security-relevant trust boundaries
+## Fluxo de dados
 
-Not established yet.
+Ainda não estabelecido.
 
-## Invariants
+## Limites de confiança relevantes para a segurança
 
-- Documentation must not claim components or controls that do not exist.
-- Architecture changes that alter interfaces, trust boundaries, build/release behavior, or dependency topology must update this document.
+Ainda não estabelecidos.
 
-## Decision log
+## Invariantes
 
-Record material architecture decisions in version control, either here or in dedicated ADR files when the number/complexity of decisions justifies them.
+- A documentação não deve afirmar a existência de componentes ou controles que não existem.
+- Alterações de arquitetura que modifiquem interfaces, limites de confiança, comportamento de build/release ou topologia de dependências devem atualizar este documento.
+
+## Registro de decisões
+
+Registre decisões materiais de arquitetura no controle de versão, aqui ou em arquivos ADR dedicados quando o número/a complexidade das decisões justificar isso.
