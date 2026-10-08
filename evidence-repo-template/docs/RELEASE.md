@@ -1,37 +1,37 @@
-# Release readiness
+# Prontidão para release
 
 **STATUS: NOT_APPLICABLE_UNTIL_FIRST_RELEASE**
 
-When a first official release exists, replace the placeholders below with project-specific evidence.
+Quando existir um primeiro release oficial, substitua os placeholders abaixo por evidências específicas do projeto.
 
-## Basic user guide
-
-TBD.
-
-## Defect reporting
-
-TBD; may reference README/Issues for non-sensitive defects.
-
-## Change log
-
-TBD; each official release should contain a descriptive log when the applicable OSPS level requires it.
-
-## Support scope and duration
+## Guia básico do usuário
 
 TBD.
 
-## Security update scope and duration
+## Relato de defeitos
 
-TBD where applicable.
+TBD; pode referenciar README/Issues para defeitos não sensíveis.
 
-## Dependency selection and tracking
+## Registro de alterações
 
-TBD where applicable.
+TBD; cada release oficial deve conter um registro descritivo quando o nível OSPS aplicável assim exigir.
 
-## Release integrity/authenticity verification
+## Escopo e duração do suporte
 
-TBD where applicable.
+TBD.
+
+## Escopo e duração das atualizações de segurança
+
+TBD quando aplicável.
+
+## Seleção e rastreamento de dependências
+
+TBD quando aplicável.
+
+## Verificação da integridade/autenticidade do release
+
+TBD quando aplicável.
 
 ## SBOM
 
-TBD when applicable to the target maturity and released compiled assets.
+TBD quando aplicável à maturidade-alvo e aos artefatos compilados lançados.
