@@ -1,15 +1,15 @@
-# Security Policy
+# Política de segurança
 
-## Reporting a vulnerability
+## Relato de uma vulnerabilidade
 
-Do **not** report suspected vulnerabilities in a public issue.
+**Não** relate suspeitas de vulnerabilidades em uma issue pública.
 
 **STATUS: PRIVATE_REPORTING_CHANNEL_NOT_CONFIGURED**
 
-Before the project targets OSPS Level 2 or distributes software to users, configure a private vulnerability-reporting mechanism (for example, GitHub private vulnerability reporting or a dedicated security contact) and replace this placeholder with the exact procedure.
+Antes que o projeto tenha como alvo o OSPS Level 2 ou distribua software aos usuários, configure um mecanismo privado de relato de vulnerabilidades (por exemplo, o relato privado de vulnerabilidades do GitHub ou um contato de segurança dedicado) e substitua este placeholder pelo procedimento exato.
 
-## Supported versions
+## Versões suportadas
 
 **STATUS: NOT_RELEASED**
 
-Before or at the first official release, document the support scope and duration for released versions where the applicable baseline requires it.
+Antes ou no primeiro release oficial, documente o escopo e a duração do suporte para as versões lançadas quando o baseline aplicável assim exigir.
